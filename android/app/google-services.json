@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "499762189779",
+    "project_id": "segundo-parcial-4e903",
+    "storage_bucket": "segundo-parcial-4e903.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:499762189779:android:07484cd8415b54a3f18b26",
+        "android_client_info": {
+          "package_name": "com.example.segundo_parcial"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDDhN_zn8nYX5sNF04L7ArkYPBUJ0QipSA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

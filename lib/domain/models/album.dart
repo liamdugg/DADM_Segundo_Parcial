@@ -1,4 +1,5 @@
 import 'package:floor/floor.dart';
+import 'package:cloud_firestore/cloud_firestore.dart';
 
 @entity
 class Album {
@@ -18,6 +19,28 @@ class Album {
     required this.releaseYear, 
     this.cover,
   });
+
+  Map<String, dynamic> toFirestore() {
+    return {
+      'id'    : id,
+      'title' : title,
+      'artist': artist,
+      'year'  : releaseYear,
+      'cover' : cover,
+    };
+  }
+
+  static Album fromFirestore(DocumentSnapshot<Map<String, dynamic>> snapshot, SnapshotOptions? options) {
+    final data = snapshot.data();
+
+    return Album(
+      id          : data?['id'],
+      title       : data?['title'],
+      artist      : data?['director'],
+      releaseYear : data?['year'],
+      cover       : data?['cover'],
+    );
+  }
 }
 
 final List<Album> albumList = [
